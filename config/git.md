@@ -23,5 +23,6 @@ git add .
 git commit -m <Mensagem>
 
 
-
+# Push
+git push -u <Origin> <Main>
 
