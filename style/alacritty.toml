@@ -20,6 +20,8 @@ opacity = 0.9
 
 
 [font]
+# sudo pacman -S nerd-fonts
+# normal = {family = "JetBrainsMono Nerd Font"}
 size = 11.00
 
 
