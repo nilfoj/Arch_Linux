@@ -26,3 +26,6 @@ git commit -m <Mensagem>
 # Push
 git push -u <Origin> <Main>
 
+
+# Pull
+git pull
