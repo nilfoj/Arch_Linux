@@ -20,7 +20,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
     "--branch=stable", -- latest stable release
-    lazypath,
+
   })
 end
 
@@ -167,10 +167,20 @@ require("mason-lspconfig").setup {
 -- LSP - Config
 local lspconfig = require("lspconfig")
 lspconfig.lua_ls.setup({})
-lspconfig.rut_analyzer.setup({})
+lspconfig.rust_analyzer.setup({})
 lspconfig.taplo.setup({})
+
+
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+vim.keymap.set('n', 'g', vim.lsp.buf.definition, {})
+vim.keymap.set({ 'n' }, '<leader>ca', vim.lsp.buf.code_action, {})
+
 
 
 
 
 -- End
+
+
+ 
+
